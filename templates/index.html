@@ -24,8 +24,11 @@
 		<div class="col-md-12">
 			<div class="jumbotron">
 				<h2>
-					Availability
+					CryptoidCoder Availability
 				</h2>
+				<h3>
+					Showing: {{ current_status }}
+				</h3>
 				<p>
 					An app designed by CryptoidCoder to show the availability of him.
 				</p>
@@ -34,10 +37,22 @@
 				</p>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-3">
 					<div class="traffic-light">
 						<div class="{{ light_colour }} light"></div>
 					</div>
+				</div>
+				<div class="cal-md-3">
+					<h2>Different Date</h2>
+					<form action="results" method="POST">
+						<label for="Date">Date:</label><br>
+						<input type="date" id="date" name="date"><br>
+						<label for="starttime">Start Time:</label><br>
+						<input type="time" id="starttime" name="starttime"><br>
+						<label for="endtime">End Time:</label><br>
+						<input type="time" id="endtime" name="endtime"><br>
+						<input type="submit" value="Submit">
+					</form>
 				</div>
 				<div class="col-md-6">
 					<h2>
@@ -54,9 +69,12 @@
 					<div class="message">
 						<h1>{{ message }}</h1>
 					</div>
+					<a href="/">
+						<button>Lookup Current Availability</button>
+					</a> 
 				</div>
 			</div>
-		</div>
+  	</div>
 	</div>
 	<footer>
 		<div class="footer">
