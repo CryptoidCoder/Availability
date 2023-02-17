@@ -126,7 +126,6 @@ def eventscheck(calendar_id, lookupdate, lookuptimestart, lookuptimeend):
                                               orderBy='startTime').execute()
         daysevents = events_result.get('items', [])
 
-
         if not daysevents:
             #print('No upcoming events found.')
             return
@@ -136,9 +135,11 @@ def eventscheck(calendar_id, lookupdate, lookuptimestart, lookuptimeend):
             event_name = event['summary'] # get event name
             event_start_time = event['start'].get('dateTime', event['start'].get('date')) #get event start time
             event_end_time = event['end'].get('dateTime', event['end'].get('date')) #get event end time
-            if target_start_utc >= event_start_time: #has event started?
-                if target_end_utc <= event_end_time: #has event not ended?
-                    parsed_daysevents.append(event_name)
+
+            if target_start_utc <= event_start_time: #has event not started?
+                if target_end_utc >= event_end_time: #has event ended?
+                    parsed_daysevents.append(event_name) #add event as it is within the times
+
 
         if parsed_daysevents != []: #if events happening now
             return parsed_daysevents
@@ -156,7 +157,7 @@ def eventscheck_all_calendars(lookupdate, lookuptimestart, lookuptimeend):
     amber_cal_now = eventscheck(amber_cal_id, lookupdate, lookuptimestart, lookuptimeend)
     green_cal_id = os.getenv('green_calendar_id')
     green_cal_now = eventscheck(green_cal_id, lookupdate, lookuptimestart, lookuptimeend)
-    
+
     if green_cal_now != None or amber_cal_now != None or red_cal_now != None: #if events today
         if red_cal_now != None: #if at least 1 of the events is a red calendar event
             traffic_light_colour = 'red'
