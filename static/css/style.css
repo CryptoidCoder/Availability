@@ -1,4 +1,7 @@
-h1, h2, h3 {
+h2 {
+    text-decoration-line: underline;
+}
+h1, h3 {
     font-weight: 700;
     letter-spacing: 1px;
     font-family: "Lucida Console"
@@ -9,6 +12,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+.row {
+    justify-content: center;
 }
 
 .traffic-light {
@@ -99,3 +105,55 @@ body {
     margin:0% 3%;
 }
 }
+.col-md-3{
+    background: #eceeef;
+    border-radius: 25px;
+    margin:2.5px;
+    
+}
+.col-md-3-traffic{
+    background: #eceeef;
+    border-radius: 25px;
+    margin:2.5px;
+    width: 140px;
+}
+.col-md-6{
+    background: #eceeef;
+    border-radius: 25px;
+    margin: 2.5px;
+}
+
+input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=time], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+input[type=submit]:hover {
+    background-color: #3c8140;
+}
+  
