@@ -7,9 +7,9 @@ def get_colour():
       global light_colour
       print(eventsnow())
       if eventsnow() != None: # if events then not available
-            return 'red', 'Not Available'
+            return 'red', 'CryptoidCoder Is Unable To Talk / Message Currently.'
       elif eventsnow() == None or eventsnow() == 'None': #if no events - then clear
-            return 'green', 'Available'
+            return 'green', 'CryptoidCoder Is Free To Talk / Message Currently.'
 
 @app.route('/')
 def index():
