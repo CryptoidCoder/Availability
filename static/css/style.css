@@ -150,10 +150,20 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
+    float: left;
 }
   
 input[type=submit]:hover {
     background-color: #3c8140;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
 }
   
