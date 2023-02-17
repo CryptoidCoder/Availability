@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>CryptoidCoder Availability</title>
-	<link rel="icon" type="image/x-icon" href="{{url_for('.static', filename='images/favicon.ico')}}">
+		<link rel="icon" type="image/x-icon" href="{{url_for('.static', filename='images/favicon.ico')}}">
 
-	<link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='css/bootstrap.min.css')}}">
-	<link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='css/style.css')}}">
+		<link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='css/bootstrap.min.css')}}">
+		<link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='css/style.css')}}">
 
-	<!--Footer-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+		<!--Footer-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
 
   </head>
   <body>
 
-    <div class="container-fluid">
+  <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="jumbotron">
-				<h2>
+				<h1>
 					CryptoidCoder Availability
-				</h2>
+				</h1>
 				<h3>
 					Showing: {{ current_status }}
 				</h3>
@@ -37,7 +37,7 @@
 				</p>
 			</div>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3-traffic">
 					<div class="traffic-light">
 						<div class="{{ light_colour }} light"></div>
 					</div>
@@ -55,9 +55,7 @@
 					</form>
 				</div>
 				<div class="col-md-6">
-					<h2>
-						Codes:
-					</h2>
+					<h2>Codes:</h2>
 					<p>
 						These may not mean the entire time entered, it may only be part of it - for more accurate results please narrow the start/end times.
 					</p>

@@ -1,11 +1,12 @@
-from flask import Flask, request, render_template, redirect
+from flask import Flask, request, render_template, redirect, flash,url_for
 from functions import *
+import os
 
 from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-
+app.secret_key = os.urandom(12).hex()
 
 
 @app.route('/', methods=['GET'])
@@ -21,7 +22,7 @@ def anotherindex():
 @app.route('/results', methods=['POST', 'GET'])
 def results():
       if request.method == 'GET':
-        return redirect("/", code=302)
+        return redirect(url_for('index'), code=302)
       if request.method == 'POST':
             form_data = request.form
             if form_data['date'] != '' and form_data['starttime'] != '' and form_data['endtime'] != '': #if all form boxes have data
@@ -31,7 +32,7 @@ def results():
                   current_light_colour = eventscheck_all_calendars(formdate, formstarttime, formendtime)
                   return render_template('index.html', light_colour=current_light_colour, message=parsemessage(current_light_colour), current_status=f'Availability On {formdate}, {formstarttime} -> {formendtime}')
             else:
-                  return "Unable To Submit Request - Fill In all Form Fields.", 200
+                  return render_template('failed.html')
       
 
 if __name__ == "__main__":
