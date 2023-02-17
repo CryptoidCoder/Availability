@@ -1,5 +1,31 @@
-# Index:
-[Colour Codes](./README.md#colour-codes-explanation)
+# Availability:
+
+## Prerequests:
+- `pip install -r requirements.txt`
+OR
+- 'source .\venv\activate'
+
+## How To Format `.env` file:
+- Create a file called `.env`
+- In it should be the following:
+
+- In between the ' ' you need to add your own token
+- You do not need the text or the ''
+```
+#Google API Creds:
+Client_ID = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.apps.googleusercontent.com'
+Client_Secret = 'GOXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+calendar_id = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX@group.calendar.google.com'
+
+
+```
+
+### To Run App:
+- `python flask_app.py`
+
+
+## Future:
+[Read this TODO File to see what I plan to do in the future](TODO)
 
 ## Colour Code Explanations
 - If The Light Is Green (The Bottom One) - Then CryptoidCoder Is Free To Talk / Message.

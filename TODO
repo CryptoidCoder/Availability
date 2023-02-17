@@ -1,7 +1,8 @@
-- Add Amber Functionality
-- Add Capability Of Checking Multiple Calendars
-- Add README Info
-- Add Copyright To The App Footer
-- Add Github Links
-- Make Name ENV Var - to allow easier reproduction
-- Edit Traffic Light Description Message
+☐ Add Amber Functionality
+☐ Add Capability Of Checking Multiple Calendars
+☐ Add README Info
+✔ Add Copyright To The App Footer @done(23-02-17 12:55)
+✔ Add Github Links @done(23-02-17 12:29)
+✘ Make Name ENV Var - to allow easier reproduction @cancelled(23-02-17 12:33)
+✔ Edit Traffic Light Description Message @done(23-02-17 12:32)
+✔ requirements.txt @done(23-02-17 12:32)
