@@ -1,0 +1,23 @@
+#Passes/Keys
+.env
+Passes.py
+credentials.json
+token.json
+
+#Logs/Other Stuff
+.log
+
+#Python Caches
+__pycache__
+.pyc
+
+#commits
+commit.txt
+
+#Virtual Environments
+#venv
+
+#Temporary Files
+.temp
+
+#Specific to this project

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CryptoidCoder Availability</title>
+	<link rel="icon" type="image/x-icon" href="{{url_for('.static', filename='images/favicon.ico')}}">
+
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="css/style.css" rel="stylesheet">-->
+	<link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='css/bootstrap.min.css')}}">
+	<link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='css/style.css')}}">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron">
+				<h2>
+					Availability
+				</h2>
+				<p>
+					An app designed by CryptoidCoder to show the availability of him.
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large" href="#">Learn more</a>
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<div class="traffic-light">
+						<div class="{{ light_colour }} light"></div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h2>
+						Codes:
+					</h2>
+					<ul>
+						<li>If The Light Is Green (The Bottom One) - Then CryptoidCoder Is Free To Talk / Message.</li>
+						<li>If The Light Is Amber (The Middle One) - Then CryptoidCoder Is Free To Message & Can Only Be Called If An Emergency.</li>
+						<li>If The Light Is Red (The Top One) - Then CryptoidCoder Is Unable To Talk / Message.</li>
+					</ul>
+					<p>
+						<a class="btn" href="#">View details »</a>
+					</p>
+					<div class="message">
+						<h1>{{ message }}</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+    <script src="{{url_for('.static', filename='js/jquery.min.js')}}"></script>
+    <script src="{{url_for('.static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('.static', filename='js/scripts.js')}}"></script>
+  </body>
+</html>
