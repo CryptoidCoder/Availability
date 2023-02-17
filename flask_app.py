@@ -1,20 +1,21 @@
 from flask import Flask, request, render_template
 from functions import *
 
+from dotenv import load_dotenv
+load_dotenv()
+
 app = Flask(__name__)
 
-def get_colour():
-      global light_colour
-      print(eventsnow())
-      if eventsnow() != None: # if events then not available
-            return 'red', 'CryptoidCoder Is Unable To Talk / Message Currently.'
-      elif eventsnow() == None or eventsnow() == 'None': #if no events - then clear
-            return 'green', 'CryptoidCoder Is Free To Talk / Message Currently.'
 
 @app.route('/')
 def index():
-    current_light_colour, current_message = get_colour()
-    #return render_template('traffic_light_stylish.html', light_colour=current_light_colour, message=current_message)
+    current_light_colour = events_now_all_calendars()
+    if current_light_colour == 'red':
+          current_message = 'CryptoidCoder Is Unable To Talk / Message Currently.'
+    elif current_light_colour == 'amber':
+          current_message = 'CryptoidCoder Is Free To Message & Can Only Be Called If An Emergency.'
+    elif current_light_colour == 'green':
+          current_message = 'CryptoidCoder Is Free To Talk / Message / Call Currently.'
     return render_template('index.html', light_colour=current_light_colour, message=current_message)
 
 if __name__ == "__main__":
