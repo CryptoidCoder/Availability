@@ -1,6 +1,6 @@
-☐ Add Amber Functionality
-☐ Add Capability Of Checking Multiple Calendars
-☐ Add README Info
+✔ Add Amber Functionality @done(23-02-17 18:26)
+✔ Add Capability Of Checking Multiple Calendars @done(23-02-17 18:25)
+✔ Add README Info @done(23-02-17 18:02)
 ✔ Add Copyright To The App Footer @done(23-02-17 12:55)
 ✔ Add Github Links @done(23-02-17 12:29)
 ✘ Make Name ENV Var - to allow easier reproduction @cancelled(23-02-17 12:33)
