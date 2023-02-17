@@ -30,6 +30,9 @@ green_calendar_id = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 [Read this TODO File to see what I plan to do in the future](TODO)
 
 ## Colour Code Explanations
+
+This may not mean the entire time entered, it may only be part of it - for more accurate results please narrow the start/end times.
+
 - If The Light Is Green (The Bottom One) - Then CryptoidCoder Is Free To Talk / Message.
 - If The Light Is Amber (The Middle One) - Then CryptoidCoder Is Free To Message & Can Only Be Called If An Emergency.
 - If The Light Is Red (The Top One) - Then CryptoidCoder Is Unable To Talk / Message.
