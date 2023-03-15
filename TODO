@@ -8,4 +8,5 @@
 ✔ requirements.txt @done(23-02-17 12:32)
 ✔ Functionality To Pick Days to Check @done(23-02-17 21:16)
 ✔ Functionality To Pick Times To Check @done(23-02-17 21:16)
-☐ add PyScript Functionality
+✘ add PyScript Functionality @cancelled(23-03-15 18:19)
+☐ Add Flask On Github Pages Ability @started(23-03-15 18:19)
