@@ -2,9 +2,6 @@ from flask import Flask, request, render_template, redirect, flash,url_for
 from functions import *
 import os
 
-from dotenv import load_dotenv
-load_dotenv()
-
 app = Flask(__name__)
 app.secret_key = os.urandom(12).hex()
 

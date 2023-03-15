@@ -5,9 +5,8 @@
 OR
 - 'source .\venv\activate'
 
-## How To Format `.env` file:
-- Create a file called `.env`
-- In it should be the following:
+## How To Format `ENV Vars` file:
+- These should be set in your hosting / locally.
 
 - In between the ' ' you need to add your own token
 - You do not need the text or the ''
