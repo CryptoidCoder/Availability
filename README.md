@@ -3,8 +3,8 @@
 ## Prerequests:
 - `pip install -r requirements.txt`
 OR
-- 'source .\venv\activate'
-
+- 'source .\venv\bin\activate' (Linux)
+- 'source .\venv\Scripts\activate.bat' (Windows)
 ## How To Format `.env` file:
 - Create a file called `.env`
 - In it should be the following:
@@ -23,7 +23,7 @@ green_calendar_id = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
 ### To Run App:
-- `python flask_app.py`
+- `python index.py`
 
 
 ## Future:
