@@ -21,3 +21,5 @@ commit.txt
 .temp
 
 #Specific to this project
+env_setup.bat
+.vercel
