@@ -3,7 +3,7 @@
 ## Prerequests:
 - `pip install -r requirements.txt`
 OR
-- 'source .\venv\bin\activate' (Linux)
+- 'source ./venv/bin/activate' (Linux)
 - 'source .\venv\Scripts\activate.bat' (Windows)
 ## How To Format `.env` file:
 - Create a file called `.env`
